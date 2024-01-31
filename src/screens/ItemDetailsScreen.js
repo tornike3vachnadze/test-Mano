@@ -55,8 +55,8 @@ const ItemDetailsScreen = ({route}) => {
         setProduct(response.data.data);
       })
       .catch(error => console.error(error));
-    // }, [route.params.productId]);
-  }, []);
+    }, [route.params.productId]);
+ 
 
   const handleImagePress = () => {
     setModalVisible(true);
